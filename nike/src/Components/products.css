@@ -1,0 +1,14 @@
+.container{
+    display: grid;
+    gap: 1rem;
+    column-gap: 1rem;
+    width: 470px;
+grid-template-columns: repeat(2, minmax(400px, 1fr));
+}
+
+.productPictures{
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+}
+
