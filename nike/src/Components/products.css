@@ -1,14 +1,78 @@
-.container{
-    display: grid;
-    gap: 1rem;
-    column-gap: 1rem;
-    width: 470px;
-grid-template-columns: repeat(2, minmax(400px, 1fr));
+.container {
+  display: grid;
+  gap: 1rem;
+  column-gap: 1rem;
+  width: 470px;
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
 }
 
-.productPictures{
+.productPictures {
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+}
+
+.productInfo {
+  position: absolute;
+  left: 850px;
+}
+
+#title {
+  position: absolute;
+  width: 350px;
+  height: 46px;
+}
+
+#price {
+  position: absolute;
+  left: 370px;
+  bottom: 60px;
+  top: 0px;
+}
+
+.shoeSize {
+  position: absolute;
+  left: 850px;
+  top: 250px;
+}
+.shoes {
+  /* position: absolute;
+  left: 850px;
+  top: 300px; */
+  display: grid;
+  gap: 1rem;
+  column-gap: 1rem;
+  width: 320px;
+  grid-template-columns: repeat(2, minmax(50px, 1fr));
+}
+.nikeShoes {
+  border: solid #e5e5e5 1px;
+  height: 40px;
+  width: 150px;
+  text-align: center;
+}
+
+.nikeShoes:hover {
+  border: solid black 1px;
+}
+
+h5 {
+  margin: 0px;
+  margin-top: 15px;
+}
+
+.buttons{
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 350px;
+    
 }
 
+button{
+    background-color: black;
+    color: white;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 150px / 100px ;
+    font-size: 20px;
+    /* margin-bottom: 10px; */
+}

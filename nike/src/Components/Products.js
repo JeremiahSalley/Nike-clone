@@ -6,7 +6,10 @@ import LeftSide from "../Images/LeftSide.webp";
 import RightSide from "../Images/RightSide.webp";
 import TopView from "../Images/TopView.webp";
 import TwoShoes from "../Images/TwoShoes.webp";
+import ProductDetail from "./ProductDetail";
 import './products.css'
+import ShoeInfo from "./ShoeInfo";
+import ShoeSize from "./ShoeSize";
 // put images in object
 // map through images creating a inline div from each image with the key = to the picture Id
 // Work on Right side
@@ -35,6 +38,9 @@ function Products() {
              <img src={picture.image}  alt='' style={{width: '400px', height: '450px'}}/> 
           </div>
       ))}
+      <ProductDetail gender="Women's Shoe" title='Nike Air Force 1 Crater' price='$110'/>
+      <ShoeSize />
+      <ShoeInfo />
     </div>
   );
 }
